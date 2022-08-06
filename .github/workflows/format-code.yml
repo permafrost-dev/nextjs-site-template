@@ -1,0 +1,30 @@
+name: Check & fix styling
+
+on:
+  push:
+
+jobs:
+  format-code:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Run prettier
+        uses: docker://permafrostsoftware/prettier-docker-ga
+        with:
+          args: --config prettier.config.js *.js *.jsx *.tsx *.json *.yml ./lib/**/* ./pages/**/* ./partials/**/* ./components/**/*
+
+      - name: Run ESLint
+        uses: permafrost-dev/eslint-docker-ga@main
+        with:
+          args: --config .eslintrc.js --fix --ext ts,js ./lib/**/*
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Fix styling

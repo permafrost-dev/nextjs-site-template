@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["*"],
+            "@/components/*": ["components/*"],
+            "@/lib/*": ["lib/*"],
+            "@/pages/*": ["pages/*"],
+            "@/partials/*": ["partials/*"],
+            "@/store/*": ["store/*"]
+        },
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "resolveJsonModule": true
+    }
+}

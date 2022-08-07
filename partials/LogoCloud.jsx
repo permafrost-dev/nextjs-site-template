@@ -2,9 +2,7 @@ export function LogoCloud() {
     return (
         <div className="bg-gray-100">
             <div className="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
-                <p className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500">
-                    Leveraging the latest technologies.
-                </p>
+                <p className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500">Leveraging the latest technologies.</p>
                 <div className="mt-6 grid grid-cols-6 gap-4 md:grid-cols-6 lg:grid-cols-6">
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                         <svg className="h-8 md:h-12 lg:h-16" version="1.1" viewBox="0 0 261.76 226.69">
@@ -35,35 +33,55 @@ export function LogoCloud() {
                                 d="M 46.22125,55.68413 0,76.69288 46.22125,104.01413 92.4425,76.69288 46.22125,55.68413 z"
                                 id="path3078"
                                 style={{
-                                    opacity: 0.60000598, fill: '#010101', fillOpacity: 1, fillRule: 'nonzero', stroke: 'none'
+                                    opacity: 0.60000598,
+                                    fill: '#010101',
+                                    fillOpacity: 1,
+                                    fillRule: 'nonzero',
+                                    stroke: 'none',
                                 }}
                             />
                             <path
                                 d="m 3.7e-4,76.6925 46.22125,27.32125 0,-48.33 L 46.22162,0 3.7e-4,76.6925 z"
                                 id="path3094"
                                 style={{
-                                    opacity: 0.44999701, fill: '#010101', fillOpacity: 1, fillRule: 'nonzero', stroke: 'none'
+                                    opacity: 0.44999701,
+                                    fill: '#010101',
+                                    fillOpacity: 1,
+                                    fillRule: 'nonzero',
+                                    stroke: 'none',
                                 }}
                             />
                             <path
                                 d="m 46.22125,0 0,55.68375 0,48.33 L 92.4425,76.6925 46.22125,0 z"
                                 id="path3110"
                                 style={{
-                                    opacity: 0.80000299, fill: '#010101', fillOpacity: 1, fillRule: 'nonzero', stroke: 'none'
+                                    opacity: 0.80000299,
+                                    fill: '#010101',
+                                    fillOpacity: 1,
+                                    fillRule: 'nonzero',
+                                    stroke: 'none',
                                 }}
                             />
                             <path
                                 d="m 3.7e-4,85.45725 46.22125,65.13375 0,-37.82625 L 3.7e-4,85.45725 z"
                                 id="path3126"
                                 style={{
-                                    opacity: 0.44999701, fill: '#010101', fillOpacity: 1, fillRule: 'nonzero', stroke: 'none'
+                                    opacity: 0.44999701,
+                                    fill: '#010101',
+                                    fillOpacity: 1,
+                                    fillRule: 'nonzero',
+                                    stroke: 'none',
                                 }}
                             />
                             <path
                                 d="m 46.22125,112.76525 0,37.82625 L 92.47,85.45775 46.22125,112.76525 z"
                                 id="path3142"
                                 style={{
-                                    opacity: 0.80000299, fill: '#010101', fillOpacity: 1, fillRule: 'nonzero', stroke: 'none'
+                                    opacity: 0.80000299,
+                                    fill: '#010101',
+                                    fillOpacity: 1,
+                                    fillRule: 'nonzero',
+                                    stroke: 'none',
                                 }}
                             />
                         </svg>

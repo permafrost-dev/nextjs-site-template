@@ -20,9 +20,12 @@ export function AboutUs() {
                 </p>
                 <p className="mx-auto mt-5 max-w-prose text-lg text-gray-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula augue. Sed ac augue sed massa ornare viverra vel non diam.
-                    <br/>
-                    <br/>
-                    Phasellus quis elit sit amet enim semper pharetra. Vestibulum nec augue rutrum, tempor ligula eget, vestibulum ipsum. Aliquam id scelerisque sem, blandit fermentum sem. Nullam rhoncus fermentum consectetur. Pellentesque ut sapien non arcu auctor luctus. Nulla non laoreet justo, vel lacinia metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur commodo sodales.
+                    <br />
+                    <br />
+                    Phasellus quis elit sit amet enim semper pharetra. Vestibulum nec augue rutrum, tempor ligula eget, vestibulum ipsum. Aliquam id
+                    scelerisque sem, blandit fermentum sem. Nullam rhoncus fermentum consectetur. Pellentesque ut sapien non arcu auctor luctus. Nulla non
+                    laoreet justo, vel lacinia metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur
+                    commodo sodales.
                 </p>
             </div>
         </div>

@@ -1,7 +1,7 @@
 const findupSync = require('findup-sync');
 const { existsSync } = require('fs');
 
-const DOT_ENV_FILENAME = findupSync([ '.env', '.env.local' ]);
+const DOT_ENV_FILENAME = findupSync(['.env', '.env.local']);
 
 const aliases = {
     '@': __dirname,
@@ -13,7 +13,7 @@ const aliases = {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     cleanDistDir: true,
-    eslint: {ignoreDuringBuilds: true,},
+    eslint: { ignoreDuringBuilds: true },
     swcMinify: true,
     optimizeFonts: true,
     reactStrictMode: true,

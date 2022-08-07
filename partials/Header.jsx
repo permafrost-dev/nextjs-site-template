@@ -3,15 +3,15 @@
 import { useState } from 'react';
 
 export function Header() {
-    let [ open, setOpen ] = useState(false);
+    let [open, setOpen] = useState(false);
 
     const logoUrl = 'https://tailwindui.com/img/logos/workflow-logo-pink-500-mark-gray-900-text.svg';
 
     const sections = [
-        {name: 'About Us', url: '#about-us'},
-        {name: 'Technologies', url: '#technologies'},
-        {name: 'Development', url: '#development'},
-        {name: 'Contact', url: '#contact'},
+        { name: 'About Us', url: '#about-us' },
+        { name: 'Technologies', url: '#technologies' },
+        { name: 'Development', url: '#development' },
+        { name: 'Contact', url: '#contact' },
     ];
 
     return (

@@ -1,8 +1,8 @@
 /** @type {import('prettier').Config} */
 const overrides = [
     {
-        files: [ '*.yml', '*.yaml' ],
-        options: {tabWidth: 2,},
+        files: ['*.yml', '*.yaml'],
+        options: { tabWidth: 2 },
     },
 ];
 

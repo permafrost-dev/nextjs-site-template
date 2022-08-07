@@ -177,9 +177,7 @@ const populatePackageInfo = async (onlyEmpty = false) => {
     await conditionalAsk(projectInfo.author, 'name', onlyEmpty, 'author name?');
     await conditionalAsk(projectInfo.author, 'email', onlyEmpty, 'author email?');
 
-    projectInfo.domain = projectInfo.domain
-        .replace(/^https?:\/\//, '')
-        .replace('www.', '');
+    projectInfo.domain = projectInfo.domain.replace(/^https?:\/\//, '').replace('www.', '');
 };
 
 const safeUnlink = path => fs.existsSync(path) && fs.unlinkSync(path);
@@ -210,10 +208,7 @@ class Features {
         },
     };
 
-    features = [
-        this.dependabot,
-        this.automerge,
-    ];
+    features = [this.dependabot, this.automerge];
 
     async run() {
         const state = {};
@@ -261,7 +256,7 @@ function removeTemplateReadmeText() {
 
 function removeAssetsDirectory() {
     try {
-        if (! fs.existsSync(`${__dirname}/assets`)) {
+        if (!fs.existsSync(`${__dirname}/assets`)) {
             return;
         }
 

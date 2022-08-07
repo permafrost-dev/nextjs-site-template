@@ -21,6 +21,9 @@ const projectInfo = {
     name: '',
     description: '',
     domain: '',
+    site: {
+        googleAnalyticsId: '',
+    },
     author: {
         email: '',
         name: '',
@@ -86,10 +89,11 @@ const replaceVariablesInFile = (filename, projectInfo) => {
     content = content
         .replace(/nextjs-site-template/g, projectInfo.name)
         .replace(/mydomain\.example/g, projectInfo.domain)
-        .replace(/\{\{package\.name\}\}/g, projectInfo.name)
-        .replace(/\{\{package\.description\}\}/g, projectInfo.description)
-        .replace(/\{\{package\.author\.name\}\}/g, projectInfo.author.name)
-        .replace(/\{\{package\.author\.email\}\}/g, projectInfo.author.email)
+        .replace(/\{\{project\.name\}\}/g, projectInfo.name)
+        .replace(/\{\{project\.description\}\}/g, projectInfo.description)
+        .replace(/\{\{author\.name\}\}/g, projectInfo.author.name)
+        .replace(/\{\{author\.email\}\}/g, projectInfo.author.email)
+        .replaceAll('{{project.site.googleAnalyticsId}}', projectInfo.site.googleAnalyticsId)
         .replace(/\{\{date\.year\}\}/g, new Date().getFullYear());
 
     if (originalContent != content) {
@@ -174,10 +178,12 @@ const populatePackageInfo = async (onlyEmpty = false) => {
     await conditionalAsk(projectInfo, 'name', onlyEmpty, 'project name?', false);
     await conditionalAsk(projectInfo, 'description', onlyEmpty, 'project description?');
     await conditionalAsk(projectInfo, 'domain', onlyEmpty, 'project domain name?');
+    await conditionalAsk(projectInfo.site, 'googleAnalyticsId', onlyEmpty, 'Google Analytics ID?');
     await conditionalAsk(projectInfo.author, 'name', onlyEmpty, 'author name?');
     await conditionalAsk(projectInfo.author, 'email', onlyEmpty, 'author email?');
 
-    projectInfo.domain = projectInfo.domain.replace(/^https?:\/\//, '').replace('www.', '');
+    projectInfo.domain = projectInfo.domain.replace(/^https?:\/\//i, '').replace('www.', '');
+    projectInfo.site.googleAnalyticsId = projectInfo.site.googleAnalyticsId.replace(/^UA-/i, '');
 };
 
 const safeUnlink = path => fs.existsSync(path) && fs.unlinkSync(path);
@@ -309,7 +315,7 @@ const run = async function () {
     fs.unlinkSync(__filename);
 
     runCommand('git add .');
-    runCommand('git commit -m"commit configured package files"');
+    runCommand('git commit -m"commit configured project files"');
 };
 
 run();

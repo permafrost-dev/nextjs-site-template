@@ -1,4 +1,9 @@
 # Next.js Basic Website Template
+<!-- ==START TEMPLATE README== -->
+
+<p align="center">
+    <img style="width: 80%;" src="assets/social-card.png" alt="template logo" />
+</p>
 
 ## Project Configuration
 
@@ -10,6 +15,7 @@ node configure-project.js
 
 This will configure optional features, update template variable placeholders, install all dependencies and commit all changes to git.  **This should be your first step after creating the repository**
 
+<!-- ==END TEMPLATE README== -->
 ## Getting Started
 
 Run the development server:

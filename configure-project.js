@@ -306,7 +306,17 @@ const run = async function () {
     try {
         removeTemplateReadmeText();
         removeAssetsDirectory();
+    } catch (err) {
+        console.log(err);
+    }
+
+    try {
         processFiles(__dirname, projectInfo);
+    } catch (err) {
+        console.log(err);   
+    }
+
+    try {
         installDependencies();
     } catch (err) {
         //
@@ -317,8 +327,12 @@ const run = async function () {
     console.log('Done, removing this script.');
     fs.unlinkSync(__filename);
 
-    runCommand('git add .');
-    runCommand('git commit -m"commit configured project files"');
+    try {
+        runCommand('git add .');
+        runCommand('git commit -m"commit configured project files"');
+    } catch (err) {
+        //
+    }
 };
 
 run();

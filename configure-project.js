@@ -28,6 +28,9 @@ const projectInfo = {
         email: '',
         name: '',
     },
+    vendor: {
+        name: '',
+    }
 };
 
 const runCommand = str => {

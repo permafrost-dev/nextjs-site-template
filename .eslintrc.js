@@ -25,6 +25,7 @@ module.exports = {
     rules: {
         '@next/next/no-server-import-in-page': 'off',
         '@next/next/no-html-link-for-pages': 'off',
+        '@next/next/no-img-element': 'off',
         'newline-per-chained-call': [ 'warn', { ignoreChainWithDepth: 2 }],
         'array-bracket-newline': [ 'warn', { multiline: true, minItems: 4 }],
         'array-bracket-spacing': [ 'warn', 'always', { objectsInArrays: false }],

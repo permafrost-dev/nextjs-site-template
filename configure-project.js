@@ -30,7 +30,7 @@ const projectInfo = {
     },
     vendor: {
         name: '',
-    }
+    },
 };
 
 const runCommand = str => {

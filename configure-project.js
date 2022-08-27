@@ -313,7 +313,7 @@ const run = async function () {
     try {
         processFiles(__dirname, projectInfo);
     } catch (err) {
-        console.log(err);   
+        console.log(err);
     }
 
     try {

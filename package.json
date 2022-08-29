@@ -44,7 +44,7 @@
         "@types/react": "^18.0.17",
         "@types/react-dom": "^18.0.6",
         "autoprefixer": "^10.4.8",
-        "eslint": "^8.22.0",
+        "eslint": "^8.23.0",
         "eslint-config-next": "^12.2.5",
         "eslint-plugin-tailwindcss": "^3.6.0",
         "findup-sync": "^5.0.0",

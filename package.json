@@ -26,7 +26,7 @@
     },
     "dependencies": {
         "@headlessui/react": "^1.7.0",
-        "@heroicons/react": "^2.0.10",
+        "@heroicons/react": "^2.0.11",
         "axios": "^0.27.2",
         "dotenv": "^16.0.2",
         "next": "^12.3.0",

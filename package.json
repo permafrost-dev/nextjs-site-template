@@ -46,7 +46,7 @@
         "autoprefixer": "^10.4.11",
         "eslint": "^8.23.1",
         "eslint-config-next": "^12.3.0",
-        "eslint-plugin-tailwindcss": "^3.6.1",
+        "eslint-plugin-tailwindcss": "^3.6.2",
         "findup-sync": "^5.0.0",
         "husky": "^8.0.1",
         "lint-staged": "^13.0",

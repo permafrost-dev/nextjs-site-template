@@ -50,7 +50,7 @@
         "findup-sync": "^5.0.0",
         "husky": "^8.0.3",
         "lint-staged": "^13.2",
-        "postcss": "^8.4.48",
+        "postcss": "^8.4.49",
         "prettier": "^2.8.8",
         "tailwindcss": "^3.4.14",
         "typescript": "^5.6"

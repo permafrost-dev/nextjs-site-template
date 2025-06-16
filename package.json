@@ -44,15 +44,15 @@
         "@types/react": "^18.3.12",
         "@types/react-dom": "^18.3.1",
         "autoprefixer": "^10.4.20",
-        "eslint": "^8.57.0",
-        "eslint-config-next": "^13.5.6",
+        "eslint": "^9.4.0",
+        "eslint-config-next": "^15.0.0",
         "eslint-plugin-tailwindcss": "^3.18.0",
         "findup-sync": "^5.0.0",
         "husky": "^8.0.3",
         "lint-staged": "^13.2",
         "postcss": "^8.5.1",
         "prettier": "^2.8.8",
-        "tailwindcss": "^3.4.17",
+        "tailwindcss": "^4.0.0",
         "typescript": "^5.7"
     }
 }

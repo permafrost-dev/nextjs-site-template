@@ -29,7 +29,7 @@
         "@heroicons/react": "^2.2.0",
         "axios": "^1.18.0",
         "dotenv": "^16.4.7",
-        "next": "^13.5.6",
+        "next": "^16.3.0",
         "react": "^18.2.0",
         "react-dom": "^18.3.1",
         "react-ga": "^3.3.1",
@@ -50,7 +50,7 @@
         "findup-sync": "^5.0.0",
         "husky": "^8.0.3",
         "lint-staged": "^13.2",
-        "postcss": "^8.5.18",
+        "postcss": "^8.5.23",
         "prettier": "^2.8.8",
         "tailwindcss": "^3.4.17",
         "typescript": "^5.7"
